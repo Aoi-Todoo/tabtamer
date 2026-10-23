@@ -1,0 +1,24 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+
+# next.js
+/.next/
+/out/
+
+# builds and local files
+/build/
+/.taste-skill/
+/data/tabtamer.json
+*.log
+.DS_Store
+Thumbs.db
+
+# local environment
+.env*
+!.env.example
+
+# editor and OS
+.idea/
+.vscode/

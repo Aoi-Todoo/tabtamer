@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Save to TabTamer</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main class="popup">
+      <header class="header">
+        <div class="brand"><span class="brand-mark" aria-hidden="true">T</span><span>TabTamer</span></div>
+        <a class="open-library" id="open-library" href="http://localhost:3000/#live-library">Open library</a>
+      </header>
+
+      <p class="eyebrow">SAVE THIS PAGE</p>
+      <form id="save-form">
+        <label for="page-title">Title</label>
+        <input id="page-title" name="title" type="text" maxlength="140" autocomplete="off" required>
+
+        <label for="page-url">Website address</label>
+        <input id="page-url" name="url" type="url" required>
+
+        <label for="collection">Collection</label>
+        <select id="collection" name="collection" required>
+          <option value="">Loading collections…</option>
+        </select>
+
+        <label for="tags">Tags <span class="optional">optional, comma separated</span></label>
+        <input id="tags" name="tags" type="text" placeholder="reference, read later" autocomplete="off">
+
+        <label for="note">Note <span class="optional">optional</span></label>
+        <textarea id="note" name="note" rows="2" maxlength="500" placeholder="What do you want to remember?"></textarea>
+
+        <button class="save-button" id="save-button" type="submit">Save to collection</button>
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+      </form>
+      <p class="server-hint" id="server-hint">Connects to your TabTamer app at localhost:3000.</p>
+    </main>
+  </body>
+</html>

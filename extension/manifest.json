@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "TabTamer — Save this page",
+  "version": "1.0.0",
+  "description": "Save the page you are viewing to a TabTamer collection.",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "http://localhost:3000/*",
+    "http://127.0.0.1:3000/*"
+  ],
+  "action": {
+    "default_title": "Save this page to TabTamer",
+    "default_popup": "popup.html"
+  }
+}
